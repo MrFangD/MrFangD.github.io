@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-26T08:19:54.684Z</updated>
+  <updated>2021-03-06T13:13:19.980Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Python教程之环境搭建</title>
+    <link href="http://example.com/2021/03/07/Python%E6%95%99%E7%A8%8B%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://example.com/2021/03/07/Python%E6%95%99%E7%A8%8B%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-03-06T21:11:17.000Z</published>
+    <updated>2021-03-06T13:13:19.980Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="第一章-Python介绍以及环境搭建"><a href="#第一章-Python介绍以及环境搭建" class="headerlink" title="第一章   Python介绍以及环境搭建"></a>第一章   Python介绍以及环境搭建</h2><h3 id="1-1-Python-简介"><a href="#1-1-Python-简介" class="headerlink" title="1.1  Python 简介"></a>1.1  Python 简介</h3><p>Python 是一个高层次的结合了解释性、编译性、互动性和面向对象的脚本语言。</p><ul><li><strong>Python 是一种解释型语言：</strong> 这意味着开发过程中没有了编译这个环节。类似于PHP和Perl语言</li><li><strong>Python 是交互式语言：</strong> 这意味着，您可以在一个 Python 提示符 <strong>&gt;&gt;&gt;</strong> 后直接执行代码</li><li><strong>Python 是面向对象语言：</strong> 这意味着Python支持面向对象的风格或代码封装在对象的编程技术</li><li><strong>Python 是简单注意思想语言：</strong>Python是一种代表简单主义思想的语言。简单贯穿python语言的全程，阅读一个良好的python程序就像在读英语一样，它使你能够专注于解决问题而不是研究语言本身是什么</li><li><strong>Python 是易学的语言：</strong>python具有极其简单的说明文档，极易上手学习</li><li><strong>Python 是快速的语言：</strong>python的底层是用 C 语言写的，很多标准库和第三方库也都是用 C 写的，运行速度非常快</li><li><strong>Python 是可移植的语言：</strong>python在于它的开源本质，已经被移植在许多平台上</li></ul><h3 id="1-2-Python环境搭建"><a href="#1-2-Python环境搭建" class="headerlink" title="1.2 Python环境搭建"></a>1.2 Python环境搭建</h3><p>由于python的跨平台性，python可以运行在不同的操作系统下，Windows、Linux、macOS。由于本人没有接触过macxitong ,故本节将教会大家如何在Windows、Linux中安装python环境。所用的python版本为3.7.6，截止于本文编写时间最新python版本为3.9.2。</p><h4 id="1-2-1-Windows下的python安装"><a href="#1-2-1-Windows下的python安装" class="headerlink" title="1.2.1 Windows下的python安装"></a>1.2.1 Windows下的python安装</h4><ol><li><p>在<a href="https://www.python.org/downloads/windows/">python的官网</a>下载对应的python版本</p><p>64位下载<img src="C:\Users\chine\AppData\Roaming\Typora\typora-user-images\image-20210225202703122.png" alt="image-20210225202703122"></p><p>32位下载<img src="C:\Users\chine\AppData\Roaming\Typora\typora-user-images\image-20210225202717623.png" alt="image-20210225202717623"></p></li><li><p>下载完成后安装，安装时一定要勾选Add python to PATH 添加路径（如果不勾选则需要安装完成后自己添加环境变量）</p><p><img src="https://img2018.cnblogs.com/blog/48590/201811/48590-20181130112038017-92851817.png" alt="img"></p></li><li><p>不改变默认进行Next下一步，选择一个安装路径，点击Install进行安装，等待进度条安装完毕，点击close关闭。</p><p><img src="C:\Users\chine\AppData\Roaming\Typora\typora-user-images\image-20210225203427451.png" alt="image-20210225203427451"></p><p><img src="C:\Users\chine\AppData\Roaming\Typora\typora-user-images\image-20210225203437898.png" alt="image-20210225203437898"></p></li><li><p>验证：运行cmd</p><p>输入 python -V 若出现python版本则说明安装成功。</p></li></ol><h4 id="1-2-2-Linux下的python安装"><a href="#1-2-2-Linux下的python安装" class="headerlink" title="1.2.2 Linux下的python安装"></a>1.2.2 Linux下的python安装</h4><p>注意在linux会自带一个python版本，千万不要卸载或者强制卸载原来自带的python，具体原因请自行查看度娘。</p><ol><li><p>下载Python3.7.6：</p><p>到官网下载<a href="https://www.python.org,在downloads中可以看到不同的版本./">https://www.python.org，在downloads中可以看到不同的版本。</a></p><p>终端窗口中命令行下载为：wget <a href="https://www.python.org/ftp/python/3.7.6/Python-3.7.6.tgz">https://www.python.org/ftp/python/3.7.6/Python-3.7.6.tgz</a></p><p>然后解压缩，tar -zxvf Pytho-3.7.6.tgz</p></li><li><p>获取root权限：</p><p>sudo passwd root</p><p>提示输入新的UNIX密码，输入两遍。</p><p>使用 su 命令切换到root用户，使用 whoami 命令可以查看当前用户为root</p></li><li><p>安装：</p><ul><li><p>建立存放python3对的文件夹： mkdir /usr/local/python376</p></li><li><p>执行配置文件，编译，编译安装</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd Python-<span class="number">3.7</span><span class="number">.6</span></span><br><span class="line">./configure --prefix=/usr/local/python376</span><br><span class="line"> make &amp;&amp; make install</span><br></pre></td></tr></table></figure></li></ul></li></ol><ul><li><p>建立软连接</p><p>ln -s /usr/local/python3/bin/python3.7 /usr/bin/python376</p><p> 　ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip376</p></li></ul><ol start="4"><li><p>测试是否安装成功，是否可用。</p><p>输入Python376，显示版本号，进入&gt;&gt;&gt;状态</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&#x27;hello world!&#x27;</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hello world!</span><br><span class="line">exit()</span><br></pre></td></tr></table></figure><p>安装完成。</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;第一章-Python介绍以及环境搭建&quot;&gt;&lt;a href=&quot;#第一章-Python介绍以及环境搭建&quot; class=&quot;headerlink&quot; title=&quot;第一章   Python介绍以及环境搭建&quot;&gt;&lt;/a&gt;第一章   Python介绍以及环境搭建&lt;/h2&gt;&lt;h3 i</summary>
+      
+    
+    
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>初来乍到</title>
     <link href="http://example.com/2021/01/24/hello-world/"/>
     <id>http://example.com/2021/01/24/hello-world/</id>
     <published>2021-01-24T00:06:48.000Z</published>
-    <updated>2021-01-26T08:19:54.684Z</updated>
+    <updated>2021-03-06T13:12:36.177Z</updated>
     
     <content type="html"><![CDATA[<p>初来乍到，简介一番，莫嫌啰嗦。</p><p>开此博客，仅为分享，莫嫌乏味。</p><h3 id="俗人"><a href="#俗人" class="headerlink" title="俗人"></a>俗人</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我是一庸俗之人</span><br><span class="line">鲜衣 怒马 功名 心上人</span><br></pre></td></tr></table></figure><h3 id="鲜衣怒马"><a href="#鲜衣怒马" class="headerlink" title="鲜衣怒马"></a>鲜衣怒马</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">虽已而立之岁却依旧鲜衣怒马，挥斥方遒</span><br></pre></td></tr></table></figure><h3 id="功名"><a href="#功名" class="headerlink" title="功名"></a>功名</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">纵然前路荆棘遍野，亦将坦然无惧仗剑随行</span><br></pre></td></tr></table></figure><h3 id="心上人"><a href="#心上人" class="headerlink" title="心上人"></a>心上人</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">两姓联姻，一堂缔约，良缘永结，匹配同称</span><br></pre></td></tr></table></figure>]]></content>
     
